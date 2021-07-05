@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+WORKDIR /app
+
+RUN apt update && apt install -y wget gcc && wget https://golang.org/dl/go1.16.5.linux-amd64.tar.gz && \
+    rm -rf /usr/local/go && tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz &&\
+    rm go1.16.5.linux-amd64.tar.gz 
+
+ENV PATH "$PATH:/usr/local/go/bin"
+
+CMD bash
