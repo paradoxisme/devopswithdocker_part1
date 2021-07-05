@@ -1,8 +1,12 @@
  
-For building the image :
+# For building the image :
+```
 dam@dam:~/Bureau/devopswithdocker/1.11_Spring$ docker build -t spring .
+```
 
-For running the image:
+# For running the image:
+
+```
 dam@dam:~/Bureau/devopswithdocker/1.11_Spring$ docker run -p 8080:8080 --rm -it spring
 
   .   ____          _            __ _ _
@@ -30,3 +34,4 @@ dam@dam:~/Bureau/devopswithdocker/1.11_Spring$ docker run -p 8080:8080 --rm -it 
 2021-06-27 19:51:13.463  INFO 1 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
 
 Open firefox to http://127.0.0.1:8080 and press on the button
+```

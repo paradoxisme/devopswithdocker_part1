@@ -1,6 +1,7 @@
 Go to the source repository with firefox : https://github.com/docker-hy/docs-exercise
 and take the inputs "basics"
 
+```
 dam@dam:~$ docker run -it devopsdockeruh/pull_exercise
 Unable to find image 'devopsdockeruh/pull_exercise:latest' locally
 latest: Pulling from devopsdockeruh/pull_exercise
@@ -14,3 +15,4 @@ Status: Downloaded newer image for devopsdockeruh/pull_exercise:latest
 Give me the password: basics
 You found the correct password. Secret message is:
 "This is the secret message"
+```

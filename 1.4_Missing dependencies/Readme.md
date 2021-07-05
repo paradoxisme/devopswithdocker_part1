@@ -1,4 +1,4 @@
- 
+```
 dam@dam:~$ docker run -d -it ubuntu
 Unable to find image 'ubuntu:latest' locally
 latest: Pulling from library/ubuntu
@@ -6,14 +6,18 @@ c549ccf8d472: Pull complete
 Digest: sha256:aba80b77e27148d99c034a987e7da3a287ed455390352663418c0f2ed40417fe
 Status: Downloaded newer image for ubuntu:latest
 5d80748cf2faf384c77c661cfb541647ed129880e789df89c7daab8e2c19e8e2
+```
 
+```
 dam@dam:~$ docker exec -it 5d80748cf2faf384c77c661cfb541647ed129880e789df89c7daab8e2c19e8e2 bash
 root@5d80748cf2fa:/# sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
 Input website:
 google
 Searching..
 sh: 1: curl: not found
+```
 
+```
 root@5d80748cf2fa:/# apt-get update && apt-get install curl
 Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
 Get:2 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]           
@@ -238,7 +242,9 @@ Updating certificates in /etc/ssl/certs...
 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d...
 done.
+```
 
+```
 dam@dam:~$ docker exec -it 5d80748cf2faf sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
 Input website:
 helsinki.fi
@@ -250,3 +256,4 @@ Searching..
 <h1>Moved Permanently</h1>
 <p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
 </body></html>
+```

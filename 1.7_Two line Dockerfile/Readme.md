@@ -1,3 +1,4 @@
+```
 dam@dam:~/Bureau/devopswithdocker/Two line Dockerfile$ docker build -t web-server .
 Sending build context to Docker daemon  2.048kB
 Step 1/2 : FROM devopsdockeruh/simple-web-service:alpine
@@ -8,7 +9,9 @@ Removing intermediate container 51ae967e5757
  ---> bdae1bb0a697
 Successfully built bdae1bb0a697
 Successfully tagged web-server:latest
+```
 
+```
 dam@dam:~/Bureau/devopswithdocker/Two line Dockerfile$ docker run web-server
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
@@ -18,4 +21,4 @@ dam@dam:~/Bureau/devopswithdocker/Two line Dockerfile$ docker run web-server
 
 [GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
-
+```

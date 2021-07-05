@@ -1,3 +1,4 @@
+```
 dam@dam:~/Bureau$ docker run --rm -p 8080:8080 -it devopsdockeruh/simple-web-service server
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
@@ -13,8 +14,11 @@ dam@dam:~/Bureau$ docker run --rm -p 8080:8080 -it devopsdockeruh/simple-web-ser
 
 
 Open firefox with this address : 127.0.0.1:8080
+```
 
 or with curl:
 
+```
 dam@dam:~/Bureau$ curl 127.0.0.1:8080
 {"message":"You connected to the following path: /","path":"/"}
+```

@@ -1,3 +1,4 @@
+```
 dam@dam:~/Bureau/devopswithdocker/1.8_Image for script$ docker build -t curler .
 Sending build context to Docker daemon  4.096kB
 Step 1/4 : FROM ubuntu:18.04
@@ -233,7 +234,9 @@ Removing intermediate container ac7b1dfe1ea4
  ---> 121b8da2b0f5
 Successfully built 121b8da2b0f5
 Successfully tagged curler:latest
+```
 
+```
 dam@dam:~/Bureau/devopswithdocker/1.8_Image for script$ docker run -it curler
 Input website:
 helsinki.fi
@@ -245,4 +248,4 @@ Searching..
 <h1>Moved Permanently</h1>
 <p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
 </body></html>
-dam@dam:~/Bureau/devopswithdocker/1.8_Image for script$  
+```  
